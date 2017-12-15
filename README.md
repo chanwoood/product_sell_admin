@@ -1,2 +1,2 @@
 # product_sell_admin
-基于python的tkinter库实现与sql server本地连接
+基于 python 的 tkinter 库实现与 sql server 本地连接
