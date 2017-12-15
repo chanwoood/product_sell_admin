@@ -29,7 +29,7 @@ class InputFrame(Frame): # 录入类
 
 
     def add(self):
-        conn = pymssql.connect(host="127.0.0.1:1433",user="root",password="2519",database="product_sell_admin")
+        conn = pymssql.connect(host="127.0.0.1:1433",user="root",password="xxxx",database="product_sell_admin")
         cur = conn.cursor() 
 
         itemNum = self.itemNum.get()
@@ -67,7 +67,7 @@ class QueryFrame(Frame): # 查询类
 
     def check(self):
         kw = self.kw.get()
-        conn = pymssql.connect(host="127.0.0.1:1433",user="root",password="2519",database="product_sell_admin")
+        conn = pymssql.connect(host="127.0.0.1:1433",user="root",password="xxxx",database="product_sell_admin")
         cur = conn.cursor()
 
         cur.execute('select 名称 from 产品')
@@ -107,7 +107,7 @@ class CountFrame(Frame): # 统计类
 
     def count(self):
         sum_ = self.sum_.get()
-        conn = pymssql.connect(host="127.0.0.1:1433",user="root",password="2519",database="product_sell_admin")
+        conn = pymssql.connect(host="127.0.0.1:1433",user="root",password="xxxx",database="product_sell_admin")
         cur = conn.cursor()
 
         text = Text(self, width=21, height=6)
